@@ -1,0 +1,326 @@
+body {
+    padding: 10px;
+    background: rgba(255, 166, 0, 0.744);
+}
+
+.imagen {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+.imagen2 {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 600px;
+}
+
+@media (max-width: 480px){
+    .imagen2 {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        height: 300px;
+    }
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.contactos {
+    float: right;
+    top: 70px;
+}
+
+.Logo {
+    width: 150px;
+    border-radius: 10%;
+}
+
+.pie {
+    width: 80px;
+    border-radius: 10%;
+}
+
+.Botones {
+    float: right;
+    position: relative;
+    top: 100px;
+}
+
+a {
+    border: 3px solid black;
+    background-color: rgb(255, 157, 0);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 20px;
+    font-family: Arial;
+    font-size: 24px;
+}
+
+.desktop {
+    width: 40px;
+    float: right;
+    aspect-ratio: 1/1;
+    background-image: url(menuhamburguesa.png);
+    background-size: contain;
+    display: none;
+    cursor: pointer;
+}
+
+.MenuMovil {
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 90px;
+    right: -210px;
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.3);
+    display: none;
+    transition: all 1s;
+}
+
+.MenuMovil a {
+    display: block;
+}
+
+.AbrirMenuMovil {
+    right: 15px;
+}
+
+@media(max-width:480px) {
+    .Botones {
+        display: none;
+    }
+
+    .desktop {
+        display: grid;
+    }
+
+    .MenuMovil {
+        display: block;
+    }
+}
+
+tr,
+td {
+    border: 3px solid black;
+    background: orange;
+    padding: 5px;
+    margin: 0%;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.crear {
+    text-align: center;
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    background-color: #ff9800;
+    font-family: Arial;
+    font-size: 12px;
+    left: 25%;
+}
+
+@media (max-width: 480px) {
+    .crear {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+.Modificar {
+    text-align: center;
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 auto;
+    background-color: #ff9800;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .Modificar {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+.tabla {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+@media (max-width: 480px) {
+    .tabla {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+
+    .tabla th,
+    .tabla td {
+        padding: 5px;
+        font-family: Arial;
+        font-size: 11px;
+        word-break: break-word;
+    }
+}
+
+input {
+    background-color: gray;
+    color: white;
+    border: 2px solid black;
+}
+
+.accion1 {
+    font-family: Arial;
+    font-size: 18px;
+    background-color: red;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.accion2 {
+    font-family: Arial;
+    font-size: 18px;
+    background-color: yellow;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .accion1 {
+        font-family: Arial;
+        font-size: 12px;
+        background-color: red;
+    }
+
+    .accion2 {
+        font-family: Arial;
+        font-size: 12px;
+        background-color: yellow;
+    }
+}
+
+.btnMod {
+    background-color: yellow;
+    font-size: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.btnGuardar {
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 15px;
+}
+
+.presentacion{
+    font-family: Arial;
+    font-size: 24px;
+}
+
+@media (max-width: 480px){
+    .presentacion{
+        font-family: Arial;
+        font-size: 12px;
+    }
+}
+
+.eslogan{
+    font-family: Arial;
+    font-size: 32px;
+    text-align: center;
+}
+
+@media (max-width: 480px){
+    .eslogan{
+        font-family: Arial;
+        font-size: 15px;
+        text-align: center;
+    } 
+}
+
+.Catalogo{
+    border: 0px solid black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.imgCatal{
+   text-align: center;
+    width: 100%;
+    height: 150px;
+}
+
+@media (max-width: 480px){
+    .imgCatal{
+        text-align: center;
+         width: 80px;
+         height: 80px;
+     }
+}
+
+.texto{
+    text-align:center;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+.etiqueta{
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.valor{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px){
+    .texto{
+        text-align:center;
+        font-family: Arial;
+        font-size: 20px;
+    }
+    .etiqueta{
+        font-family: Arial;
+        font-size: 15px;
+    }
+    .valor{
+        font-family: Arial;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}

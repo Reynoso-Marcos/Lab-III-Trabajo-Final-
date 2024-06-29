@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scryipt.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="Logo" src="LogoFerreteria.png" alt="logo">
+
+        <nav class="Botones">
+            <a href="Página-Principal.html">Inicio</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Catalogo.html">Catalogo</a>
+        </nav>
+
+        <div class="desktop" onclick="menu()"></div>
+
+        <nav id="MenuMovil" class="MenuMovil">
+            <a href="Página-Principal.html">Inicio</a>
+            <a href="Productos.html">Productos</a>
+            <a href="Catalogo.html">Catalogo</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        
+        <div>
+            <img src="herramientas-fondo.jpg" alt="imagen" class="imagen">
+        </div>
+        <br>
+
+        <div class="tabla">
+            <h1>Productos Disponibles</h1>
+
+            <table id="Tabla">
+                <tr>
+                    <td>Título</td>
+                    <td>Precio en Pesos</td>
+                    <td>Precio en Dolar</td>
+                    <td>Fecha</td>
+                </tr>
+
+                <tbody id="resultado"></tbody>
+            </table>
+        </div>
+
+        <br> <br>
+
+        <div class="Modificar">
+            <h1>Modificar Producto</h1>
+
+            <label>Id</label>
+            <br>
+            <input type="text" id="idModificar" readonly>
+            <br><br>
+            <label>Título del Producto</label>
+            <br>
+            <input type="text" id="tituloModificar">
+            <br><br>
+            <label>Precio en Pesos</label>
+            <br>
+            <input type="number" id="precioPesoModificar">
+            <br><br>
+            <label>Precio en Dolar</label>
+            <br>
+            <input type="number" id="precioDolarModificar">
+            <br><br>
+            <label>Fecha</label>
+            <br>
+            <input type="date" id="fechaModificar">
+            <br><br>
+            <button class="btnMod" onclick="ModificarProducto()">Modificar</button>
+            <br><br>
+        </div>
+
+        <br>
+
+        <div class="crear">
+            <h1>Nuevo Producto</h1>
+
+            <label for="">Título del Producto</label>
+            <br>
+            <input type="text" id="titulo">
+            <br><br>
+            <label for="">Precio en Pesos</label>
+            <br>
+            <input type="number" id="precioPeso">
+            <br><br>
+            <label for="">Precio en Dolar</label>
+            <br>
+            <input type="number" id="precioDolar">
+            <br><br>
+            <label for="">Fecha</label>
+            <br>
+            <input type="date" id="fecha">
+            <br><br>
+            <button class="btnGuardar" onclick="CrearNuevoProducto()">Crear Producto</button>
+            <br><br>
+        </div>
+
+    </main>
+    <br>
+    <footer>
+
+        <hr>
+        <img class="pie" src="LogoFerreteria.png" alt="Logo">
+        <div class="contactos">
+
+            <h9>Teléfono: 3564-586473</h9> <br>
+            <h9>Dirección: Salta 753 - San Francisco - Cordoba</h9> <br>
+            <h9>E-Mail: construyefacil@gmail.com</h9>
+        </div>
+
+    </footer>
+    <script src="scryipt.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
